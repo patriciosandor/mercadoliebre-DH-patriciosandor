@@ -1,0 +1,376 @@
+/* ESTA ES LA VERSION BUENA */
+:root {
+    --amarillo: #EAC926;
+	--azul: #03264C;
+    --celeste: #1259c3;
+    --grisoscuro: #666;
+    --grisclaro: #ebebeb;
+    --verde: #39b54a;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color:var(--amarillo);
+}
+
+
+/* ---- HEADER - TOP ---- */
+
+.head-logo{
+    display: flex;
+    width: 100%;
+}
+
+.logo{
+    width: 50vw;
+    padding: 20px 10px 10px 20px;
+}
+
+.search-bar {
+    margin: auto;
+    margin-top: 8%;
+    margin-left: 0;
+    width: 100vw;
+}
+.head-logo input, .head-logo {
+    padding: 5px;
+    width: 85%;
+
+}
+.compra-en-cuotas {
+    text-align: center;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    font-size: 16px;
+}
+.head-form input , .head-form button{
+    border: none;
+}
+/* --- HEADER - BOTTOM  --- */
+.primer-nav {
+    display: none;
+}
+.primer-nav ul{
+    display: flex;
+}
+.primer-nav li{
+    list-style-type: none;
+    font-size: 13px;
+    /* display: flex; */
+    justify-content: space-around;
+
+}
+
+.primer-nav li a{
+    text-decoration: none;
+    color: black
+}
+
+.header-abajo {
+    display: flex;
+}
+
+.burger-menu {
+    background-color: var(--celeste);
+    padding: 8px 14px;
+    color: white;
+    margin: auto;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    
+}
+.publicidad-separador {
+    width: 100%;
+}
+/* ----- MAIN ----- */
+.titular {
+    justify-content: center;
+    font-weight: 600;
+}
+.main {
+    background: var(--grisclaro);
+    display: flex;
+    justify-content: center;
+    padding: 20px;    
+}
+.main img {
+    margin-top: 10px;
+    max-width: 90vw; 
+}
+
+.main-article {
+    border: 1px solid #ebebeb;
+    padding: 15px;
+    background: white;
+    margin-top: 10px;
+    position: relative;
+    transition: all, 450ms;
+    transition: 6s;
+}
+.main-article img{
+    width: 100%;
+    box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
+}
+.oferta {
+    color: var(--verde);
+    padding-left: 10%;
+    width: 69%;
+}
+.precio { 
+    width: 28%;
+}
+.descripcion {
+    display: none;
+    padding-bottom: 15px;
+    transition: 6s;
+}
+.main-article:hover .descripcion{
+    display: flex;
+}
+.main-article:hover{
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.oferta-precio{
+    display: flex;
+    margin: auto;
+    padding: 15px 0 15px 0 ;
+}
+.camionetita {
+    border: 1px solid var(--verde);
+    border-radius: 50%;
+    display: inline-block;
+    color: var(--verde);
+    padding: 5px;
+    position: absolute;
+    right: 28px;
+    bottom: 40px;
+    z-index: 100;
+    transition: 2s;
+} 
+.main-article:hover .camionetita{
+    rotate: 90deg;
+}
+
+/* ---- FOOTER ---- */
+
+.footer-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-article{
+    width: 60%;
+    margin: 25px 0;
+    font-size: 16x;
+    margin: aut;
+}
+.footer-icone{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--celeste);
+    text-align: center;
+}
+.footer-article h4{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* -- FORM REGISTER REGISTRATE --*/
+
+.main-register{
+    background-color: var(--grisclaro);
+    text-align: center;
+    padding: 30px 0;
+}
+.form-structure-a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-structure-a input{
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0;
+    padding: 10px 10px;
+    width: 90%;
+}
+.main-form h4{
+    font-size: 16px;
+    margin: 15px 0;
+}
+.check-form{
+    display: flex;
+    flex-direction: column;
+}
+
+/* -- FORM LOGIN --*/
+
+.main-log{
+    width: 100%;
+    background-color: var(--grisclaro);
+    text-align: center;
+    padding: 30px 0;
+}
+.main-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.form-login input{
+    padding: 8px;
+    border: none;
+    width: 80%;
+    margin: 20px 0;
+}
+.button-login{
+    width: 80%;
+}
+.button-login button:hover{
+    background-color: #0022AA;
+}
+.button-login button{
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1259c3;
+    color: #ebebeb;
+    font-size: 16px;
+    width: 100%;
+    transition: 1s;
+}
+
+
+@media (min-width: 557px) {
+/* ---- HEADER - TOP ---- */
+.top-header {
+    width: 100%;
+    display: flex;
+}
+.logo{
+    width: 50%; 
+    padding: 30px 10px 10px 20px;
+
+}
+.search-bar {
+    margin: auto;
+    margin-top: 9%;
+    width: 50%;
+    
+}
+.compra-en-cuotas {
+    margin-top: 6% ;
+    text-align: right; 
+    margin-right: 9px; 
+    width: 75%;
+    font-size: 12px;
+
+}
+/* ---- HEADER - BOTTOM ---- */
+.burger-menu {
+    display: none;
+}
+.primer-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding-top: 40px;
+}
+.primer-nav ul{
+    display: flex;
+    justify-content: space-between; 
+}
+.primer-nav li{
+    margin: 6px;
+    font-size: 13px;
+}
+.primer-nav ul li a{
+    justify-content: space-between;
+}
+/* -- MAIN -- */
+    .titular{
+        padding-bottom: 20px;
+    }
+    /* .descripcion {
+        display: flex;
+    } */
+
+    .main-article  {
+        box-shadow: 0px 0px 3px rgb(100, 100, 100);
+        display: inline-block;
+        width: 35%;
+        margin-left: 10%
+    }
+    .camionetita{
+        bottom: 85px;
+        right: 16px;
+    }
+    .oferta{
+        margin-left: 30px;
+    }
+    
+    /* FORM */
+    .form-structure-a input{
+        width: 50%;
+    }
+
+    /* FOOTER */
+    .footer-article{
+        width: 30%;
+    }
+    .footer-article h4{
+        text-align: center;
+    }
+}
+@media (min-width: 660px){
+    .primer-nav li{
+        margin: 7px;
+        font-size: 15px;
+    }
+    .compra-en-cuotas {
+        margin-top: 6% ;
+        text-align: right; 
+        margin-right: 10px; 
+        width: 75%;
+        font-size: 14px;
+    }
+
+    /* FOOTERE */
+    
+.form-login input{
+    width: 40%;
+  
+}
+.button-login{
+    width: 10%;
+}
+
+}
+@media (min-width: 768px) {
+    /* FOOTER */
+    .footer-section{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
