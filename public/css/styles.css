@@ -368,6 +368,21 @@ header {
 
 }
 @media (min-width: 768px) {
+    section{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .titular{
+        text-align: center;
+        width: 100%;
+    }
+    .main-article  {
+        width: 22%;
+        margin-left: 10px;
+
+    }
+    
     /* FOOTER */
     .footer-section{
         flex-direction: row;
